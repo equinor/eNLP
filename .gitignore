@@ -1,0 +1,42 @@
+# OS generated files #
+.*.swp
+*.py[cod]
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/*
+static/*
+db.sqlite3
+
+# Build #
+build
+dist
+eNLP.egg-info/
+
+# setuptools_scm generated  #
+enlp/version.py
+
+# Development #
+notebooks
+TODO
+
+# Documentation #
+docs/build
+docs/source/api/generated
+docs/source/gallery
+
+# Pylint #
+pylint_plot.py
+pylintrc
+
+
+.cache
+
+# EXAMPLE DATA TO IGNORE
+# Bcause google vectors are so large
+examples/example_data/GoogleNews-vectors-negative300.bin
+examples/example_data/tmp_lang_mod

@@ -1,0 +1,17 @@
+name: enlp
+channels:
+  - defaults
+dependencies:
+  - python=3.6.4
+  - numpy=1.13.1
+  - matplotlib=2.0.2
+  - pandas=0.21
+  - nltk=3.3.0
+  - spacy=2.0.11
+  - scikit-learn
+  - gensim
+  - pip:
+      - https://github.com/ohenrik/nb_dep_ud_sm/raw/master/nb_dep_ud_sm-0.0.1/dist/nb_dep_ud_sm-0.0.1.tar.gz
+      - https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.0.0/en_core_web_md-2.0.0.tar.gz
+      - wordcloud
+      - rake-nltk

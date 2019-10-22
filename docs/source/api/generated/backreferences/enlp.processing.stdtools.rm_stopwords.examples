@@ -1,0 +1,58 @@
+
+
+Examples using ``enlp.processing.stdtools.rm_stopwords``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Removing Stopwords">
+
+.. only:: html
+
+    .. figure:: /examples/images/thumb/sphx_glr_ex_get_stopwords_thumb.png
+
+        :ref:`sphx_glr_examples_ex_get_stopwords.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+    * :ref:`sphx_glr_examples_ex_get_stopwords.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="NOTE: This is an example to show how to run the procedure however due to the small dataset used...">
+
+.. only:: html
+
+    .. figure:: /examples/images/thumb/sphx_glr_ex_importantwords_thumb.png
+
+        :ref:`sphx_glr_examples_ex_importantwords.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+    * :ref:`sphx_glr_examples_ex_importantwords.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="NOTE: This is an example to show how to run the procedure however due to the small dataset used...">
+
+.. only:: html
+
+    .. figure:: /examples/images/thumb/sphx_glr_ex_topicmodelling_thumb.png
+
+        :ref:`sphx_glr_examples_ex_topicmodelling.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+    * :ref:`sphx_glr_examples_ex_topicmodelling.py`

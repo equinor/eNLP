@@ -1,0 +1,749 @@
+The history of natural language processing generally started in the 1950s, although work can be found from earlier
+periods. In 1950, Alan Turing published an article titled "Computing Machinery and Intelligence" which proposed what is
+now called the Turing test as a criterion of intelligence.
+
+The Georgetown experiment in 1954 involved fully automatic translation of more than sixty Russian sentences into
+English. The authors claimed that within three or five years, machine translation would be a solved problem.[2]
+However, real progress was much slower, and after the ALPAC report in 1966, which found that ten-year-long research had
+failed to fulfill the expectations, funding for machine translation was dramatically reduced. Little further research
+in machine translation was conducted until the late 1980s, when the first statistical machine translation systems were
+developed.
+
+Some notably successful natural language processing systems developed in the 1960s were SHRDLU, a natural language
+system working in restricted "blocks worlds" with restricted vocabularies, and ELIZA, a simulation of a Rogerian
+psychotherapist, written by Joseph Weizenbaum between 1964 and 1966. Using almost no information about human thought or
+emotion, ELIZA sometimes provided a startlingly human-like interaction. When the "patient" exceeded the very small
+knowledge base, ELIZA might provide a generic response, for example, responding to "My head hurts" with "Why do you say
+your head hurts?".
+
+During the 1970s, many programmers began to write "conceptual ontologies", which structured real-world information into
+computer-understandable data. Examples are MARGIE (Schank, 1975), SAM (Cullingford, 1978), PAM (Wilensky, 1978),
+TaleSpin (Meehan, 1976), QUALM (Lehnert, 1977), Politics (Carbonell, 1979), and Plot Units (Lehnert 1981). During this
+time, many chatterbots were written including PARRY, Racter, and Jabberwacky.
+
+Up to the 1980s, most natural language processing systems were based on complex sets of hand-written rules. Starting in
+the late 1980s, however, there was a revolution in natural language processing with the introduction of machine
+learning algorithms for language processing. This was due to both the steady increase in computational power (see
+Moore's law) and the gradual lessening of the dominance of Chomskyan theories of linguistics (e.g. transformational
+grammar), whose theoretical underpinnings discouraged the sort of corpus linguistics that underlies the machine-
+learning approach to language processing.[3] Some of the earliest-used machine learning algorithms, such as decision
+trees, produced systems of hard if-then rules similar to existing hand-written rules. However, part-of-speech tagging
+introduced the use of hidden Markov models to natural language processing, and increasingly, research has focused on
+statistical models, which make soft, probabilistic decisions based on attaching real-valued weights to the features
+making up the input data. The cache language models upon which many speech recognition systems now rely are examples of
+such statistical models. Such models are generally more robust when given unfamiliar input, especially input that
+contains errors (as is very common for real-world data), and produce more reliable results when integrated into a
+larger system comprising multiple subtasks.
+
+Many of the notable early successes occurred in the field of machine translation, due especially to work at IBM
+Research, where successively more complicated statistical models were developed. These systems were able to take
+advantage of existing multilingual textual corpora that had been produced by the Parliament of Canada and the European
+Union as a result of laws calling for the translation of all governmental proceedings into all official languages of
+the corresponding systems of government. However, most other systems depended on corpora specifically developed for the
+tasks implemented by these systems, which was (and often continues to be) a major limitation in the success of these
+systems. As a result, a great deal of research has gone into methods of more effectively learning from limited amounts
+of data.
+
+Recent research has increasingly focused on unsupervised and semi-supervised learning algorithms. Such algorithms are
+able to learn from data that has not been hand-annotated with the desired answers, or using a combination of annotated
+and non-annotated data. Generally, this task is much more difficult than supervised learning, and typically produces
+less accurate results for a given amount of input data. However, there is an enormous amount of non-annotated data
+available (including, among other things, the entire content of the World Wide Web), which can often make up for the
+inferior results if the algorithm used has a low enough time complexity to be practical.
+
+In the 2010s, representation learning and deep neural network-style machine learning methods became widespread in
+natural language processing, due in part to a flurry of results showing that such techniques[4][5] can achieve state-of
+-the-art results in many natural language tasks, for example in language modeling,[6] parsing,[7][8] and many others.
+Popular techniques include the use of word embeddings to capture semantic properties of words, and an increase in
+end-to-end learning of a higher-level task (e.g., question answering) instead of relying on a pipeline of separate
+intermediate tasks (e.g., part-of-speech tagging and dependency parsing). In some areas, this shift has entailed
+substantial changes in how NLP systems are designed, such that deep neural network-based approaches may be viewed as a
+new paradigm distinct from statistical natural language processing. For instance, the term neural machine translation
+(NMT) emphasizes the fact that deep learning-based approaches to machine translation directly learn sequence-to-sequence
+transformations, obviating the need for intermediate steps such as word alignment and language modeling that were used
+in statistical machine translation (SMT).
+
+Natural-language understanding (NLU) or natural-language interpretation (NLI)[1] is a subtopic of natural-language
+processing in artificial intelligence that deals with machine reading comprehension. Natural-language understanding is
+considered an AI-hard problem.
+
+There is considerable commercial interest in the field because of its application to automated reasoning, machine
+translation, question answering, news-gathering, text categorization, voice-activation, archiving, and large-scale
+content analysis.
+
+NLU is the post-processing of text, after the use of NLP algorithms (identifying parts-of-speech, etc.), that utilizes
+context from recognition devices (automatic speech recognition [ASR], vision recognition, last conversation,
+misrecognized words from ASR, personalized profiles, microphone proximity etc.), in all of its forms, to discern
+meaning of fragmented and run-on sentences to execute an intent from typically voice commands. NLU has an ontology
+around the particular product vertical that is used to figure out the probability of some intent. An NLU has a defined
+list of known intents that derives the message payload from designated contextual information recognition sources. The
+NLU will provide back multiple message outputs to separate services (software) or resources (hardware) from a single
+derived intent (response to voice command initiator with visual sentence (shown or spoken) and transformed voice
+command message too different output messages to be consumed for M2M communications and actions).
+
+The program STUDENT, written in 1964 by Daniel Bobrow for his PhD dissertation at MIT is one of the earliest known
+attempts at natural-language understanding by a computer. Eight years after John McCarthy coined the
+term artificial intelligence, Bobrow's dissertation (titled Natural Language Input for a Computer Problem Solving
+System) showed how a computer could understand simple natural language input to solve algebra word problems.
+
+A year later, in 1965, Joseph Weizenbaum at MIT wrote ELIZA, an interactive program that carried on a dialogue in
+English on any topic, the most popular being psychotherapy. ELIZA worked by simple parsing and substitution of key
+words into canned phrases and Weizenbaum sidestepped the problem of giving the program a database of real-world
+knowledge or a rich lexicon. Yet ELIZA gained surprising popularity as a toy project and can be seen as a very early
+precursor to current commercial systems such as those used by Ask.com.
+
+In 1969 Roger Schank at Stanford University introduced the conceptual dependency theory for natural-language
+understanding. This model, partially influenced by the work of Sydney Lamb, was extensively used by Schank's students
+at Yale University, such as Robert Wilensky, Wendy Lehnert, and Janet Kolodner.
+
+In 1970, William A. Woods introduced the augmented transition network (ATN) to represent natural language input.
+Instead of phrase structure rules ATNs used an equivalent set of finite state automata that were called recursively.
+ATNs and their more general format called "generalized ATNs" continued to be used for a number of years.
+
+In 1971 Terry Winograd finished writing SHRDLU for his PhD thesis at MIT. SHRDLU could understand simple English
+sentences in a restricted world of children's blocks to direct a robotic arm to move items. The successful
+demonstration of SHRDLU provided significant momentum for continued research in the field.[14][15] Winograd continued
+to be a major influence in the field with the publication of his book Language as a Cognitive Process. At Stanford,
+Winograd would later be the adviser for Larry Page, who co-founded Google.
+
+In the 1970s and 1980s the natural language processing group at SRI International continued research and development in
+the field. A number of commercial efforts based on the research were undertaken, e.g., in 1982 Gary Hendrix formed
+Symantec Corporation originally as a company for developing a natural language interface for database queries on
+personal computers. However, with the advent of mouse driven, graphic user interfaces Symantec changed direction. A
+number of other commercial efforts were started around the same time, e.g., Larry R. Harris at the Artificial
+Intelligence Corporation and Roger Schank and his students at Cognitive Systems corp.[17][18] In 1983, Michael Dyer
+developed the BORIS system at Yale which bore similarities to the work of Roger Schank and W. G. Lehnert.
+
+The third millennium saw the introduction of systems using machine learning for text classification, such as the IBM
+Watson. However, it is debated how much "understanding" such systems demonstrate, e.g. according to John Searle, Watson
+did not even understand the questions.
+
+John Ball, cognitive scientist and inventor of Patom Theory supports this assessment. Natural language processing has
+made inroads for applications to support human productivity in service and ecommerce but this has largely been made
+possible by narrowing the scope of the application. There are thousands of ways to request something in a human
+language which still defies conventional natural language processing. "To have a meaningful conversation with machines
+is only possible when we match every word to the correct meaning based on the meanings of the other words in the
+sentence – just like a 3-year-old does without guesswork"
+
+The umbrella term "natural-language understanding" can be applied to a diverse set of computer applications, ranging
+from small, relatively simple tasks such as short commands issued to robots, to highly complex endeavors such as the
+full comprehension of newspaper articles or poetry passages. Many real world applications fall between the two
+extremes, for instance text classification for the automatic analysis of emails and their routing to a suitable
+department in a corporation does not require in depth understanding of the text, but needs to deal with a much
+larger vocabulary and more diverse syntax than the management of simple queries to database tables with fixed schemata.
+
+Throughout the years various attempts at processing natural language or English-like sentences presented to computers
+have taken place at varying degrees of complexity. Some attempts have not resulted in systems with deep understanding,
+but have helped overall system usability. For example, Wayne Ratliff originally developed the Vulcan program with an
+English-like syntax to mimic the English speaking computer in Star Trek. Vulcan later became the dBase system whose
+easy-to-use syntax effectively launched the personal computer database industry. Systems with an easy to use or
+English like syntax are, however, quite distinct from systems that use a rich lexicon and include an internal
+representation (often as first order logic) of the semantics of natural language sentences.
+
+Hence the breadth and depth of "understanding" aimed at by a system determine both the complexity of the system (and
+the implied challenges) and the types of applications it can deal with. The "breadth" of a system is measured by the
+sizes of its vocabulary and grammar. The "depth" is measured by the degree to which its understanding approximates that
+of a fluent native speaker. At the narrowest and shallowest, English-like command interpreters require minimal
+complexity, but have a small range of applications. Narrow but deep systems explore and model mechanisms of
+understanding, but they still have limited application. Systems that attempt to understand the contents of a
+document such as a news release beyond simple keyword matching and to judge its suitability for a user are broader and
+require significant complexity, but they are still somewhat shallow. Systems that are both very broad and very deep
+are beyond the current state of the art.
+
+The idea of machine translation may be traced back to the 17th century. In 1629, René Descartes proposed a universal
+language, with equivalent ideas in different tongues sharing one symbol. The field of "machine translation"
+appeared in Warren Weaver's Memorandum on Translation (1949). The first researcher in the field, Yehosha Bar-Hillel,
+began his research at MIT (1951). A Georgetown University MT research team followed (1951) with a public demonstration
+of its Georgetown-IBM experiment system in 1954. MT research programs popped up in Japan and Russia (1955), and
+the first MT conference was held in London (1956). Researchers continued to join the field as the Association for
+Machine Translation and Computational Linguistics was formed in the U.S. (1962) and the National Academy of Sciences
+formed the Automatic Language Processing Advisory Committee (ALPAC) to study MT (1964). Real progress was much slower,
+however, and after the ALPAC report (1966), which found that the ten-year-long research had failed to fulfill
+expectations, funding was greatly reduced. According to a 1972 report by the Director of Defense Research and
+Engineering (DDR&E), the feasibility of large-scale MT was reestablished by the success of the Logos MT system in
+translating military manuals into Vietnamese during that conflict.
+
+The French Textile Institute also used MT to translate abstracts from and into French, English, German and Spanish
+(1970); Brigham Young University started a project to translate Mormon texts by automated translation (1971); and Xerox
+used SYSTRAN to translate technical manuals (1978). Beginning in the late 1980s, as computational power increased and
+became less expensive, more interest was shown in statistical models for machine translation. Various MT companies were
+launched, including Trados (1984), which was the first to develop and market translation memory technology (1989). The
+first commercial MT system for Russian / English / German-Ukrainian was developed at Kharkov State University (1991).
+
+MT on the web started with SYSTRAN offering free translation of small texts (1996), followed by AltaVista Babelfish,
+which racked up 500,000 requests a day (1997). Franz Josef Och (the future head of Translation Development AT Google)
+won DARPA's speed MT competition (2003). More innovations during this time included MOSES, the open-source statistical
+MT engine (2007), a text/SMS translation service for mobiles in Japan (2008), and a mobile phone with built-in
+speech-to-speech translation functionality for English, Japanese and Chinese (2009). Recently, Google announced that
+Google Translate translates roughly enough text to fill 1 million books in one day (2012).
+
+The idea of using digital computers for translation of natural languages was proposed as early as 1946 by A. D. Booth
+and possibly others. Warren Weaver wrote an important memorandum "Translation" in 1949. The Georgetown experiment was
+by no means the first such application, and a demonstration was made in 1954 on the APEXC machine at Birkbeck College
+(University of London) of a rudimentary translation of English into French. Several papers on the topic were published
+at the time, and even articles in popular journals (for example an article by Cleave and Zacharov in the September 1955
+issue of Wireless World). A similar application, also pioneered at Birkbeck College at the time, was reading and
+composing Braille texts by computer.
+
+In the expression named entity, the word named restricts the task to those entities for which one or many strings, such
+as words or phrases, stands (fairly) consistently for some referent. This is closely related to rigid designators, as
+defined by Kripke, although in practice NER deals with many names and referents that are not philosophically "rigid".
+For instance, the automotive company created by Henry Ford in 1903 can be referred to as Ford or Ford Motor Company,
+although "Ford" can refer to many other entities as well (see Ford). Rigid designators include proper names as well as
+terms for certain biological species and substances, but exclude pronouns (such as "it"; see coreference resolution),
+descriptions that pick out a referent by its properties (see also De dicto and de re), and names for kinds of things as
+opposed to individuals (for example "Bank").
+
+Full named-entity recognition is often broken down, conceptually and possibly also in implementations, as two distinct
+problems: detection of names, and classification of the names by the type of entity they refer to (e.g. person,
+organization, location and other). The first phase is typically simplified to a segmentation problem: names are defined
+to be contiguous spans of tokens, with no nesting, so that "Bank of America" is a single name, disregarding the fact
+that inside this name, the substring "America" is itself a name. This segmentation problem is formally similar to
+chunking. The second phase requires choosing an ontology by which to organize categories of things.
+
+Temporal expressions and some numerical expressions (i.e., money, percentages, etc.) may also be considered as named
+entities in the context of the NER task. While some instances of these types are good examples of rigid designators
+(e.g., the year 2001) there are also many invalid ones (e.g., I take my vacations in “June”). In the first case, the
+year 2001 refers to the 2001st year of the Gregorian calendar. In the second case, the month June may refer to the
+month of an undefined year (past June, next June, every June, etc.). It is arguable that the definition of named entity
+is loosened in such cases for practical reasons. The definition of the term named entity is therefore not strict and
+often has to be explained in the context in which it is used.
+
+Certain hierarchies of named entity types have been proposed in the literature. BBN categories, proposed in 2002, is
+used for question answering and consists of 29 types and 64 subtypes. Sekine's extended hierarchy, proposed in 2002,
+is made of 200 subtypes. More recently, in 2011 Ritter used a hierarchy based on common Freebase entity types in
+ground-breaking experiments on NER over social media text.
+
+NER systems have been created that use linguistic grammar-based techniques as well as statistical models such as
+machine learning. Hand-crafted grammar-based systems typically obtain better precision, but at the cost of lower recall
+and months of work by experienced computational linguists. Statistical NER systems typically require a large amount of
+manually annotated training data. Semisupervised approaches have been suggested to avoid part of the annotation effort.
+
+Natural-language generation (NLG) is a software process that transforms structured data into plain-English content. It
+can be used to produce long form content for organizations to automate custom reports, as well as produce custom
+content for a web or mobile application. It can also be used to generate short blurbs of text in interactive
+conversations (a chatbot) which might even be read out loud by a text-to-speech system.
+
+Automated NLG can be compared to the process humans use when they turn ideas into writing or speech. Psycholinguists
+prefer the term language production for this process, which can also be described in mathematical terms, or modeled in
+a computer for psychological research. NLG systems can also be compared to translators of artificial computer
+languages, such as decompilers or transpilers, which also produce human-readable code generated from an intermediate
+representation. Human languages tend to be considerably more complex and allow for much more ambiguity and variety of
+expression than programming languages, which makes NLG more challenging.
+
+NLG may be viewed as the opposite of natural-language understanding: whereas in natural-language understanding, the
+system needs to disambiguate the input sentence to produce the machine representation language, in NLG the system needs
+to make decisions about how to put a concept into words. The practical considerations in building NLU vs. NLG systems
+are not symmetrical. NLU needs to deal with ambiguous or erroneous user input, whereas the ideas the system wants to
+express through NLG are generally known precisely. NLG needs to choose a specific, self-consistent textual
+representation from many potential representations, whereas NLU generally tries to produce a single, normalized
+representation of the idea expressed.
+
+NLG has existed for a long time[when?] but commercial NLG technology has only recently[when?] become widely available.
+NLG techniques range from simple template-based systems like a mail merge that generates form letters, to systems that
+have a complex understanding of human grammar. NLG can also be accomplished by training a statistical model using
+machine learning, typically on a large corpus of human-written texts.
+
+The popular media has paid the most attention to NLG systems which generate jokes (see computational humor), but from a
+commercial perspective, the most successful NLG applications have been data-to-text systems which generate textual
+summaries of databases and data sets; these systems usually perform data analysis as well as text generation. Research
+has shown that textual summaries can be more effective than graphs and other visuals for decision support, and that
+computer-generated texts can be superior (from the reader's perspective) to human-written texts.
+
+The first commercial data-to-text systems produced weather forecasts from weather data. The earliest such system to be
+deployed was FoG, which was used by Environment Canada to generate weather forecasts in French and English in the early
+1990s. The success of FoG triggered other work, both research and commercial. Recent applications include the UK Met
+Office's text-enhanced forecast.
+
+Currently there is considerable commercial interest in using NLG to summarise financial and business data. Indeed,
+Gartner has said that NLG will become a standard feature of 90% of modern BI and analytics platforms. NLG is also being
+used commercially in automated journalism, chatbots, generating product descriptions for e-commerce sites, summarising
+medical records, and enhancing accessibility (for example by describing graphs and data sets to blind people).
+
+An example of an interactive use of NLG is the WYSIWYM framework. It stands for What you see is what you meant and
+allows users to see and manipulate the continuously rendered view (NLG output) of an underlying formal language
+document (NLG input), thereby editing the formal language without learning it.
+
+Content generation systems assist human writers and makes writing process more efficient and effective. A content
+generation tool based on web mining using search engines APIs has been built. The tool imitates the cut-and-paste
+writing scenario where a writer forms its content from various search results. Relevance verification is essential to
+filter out irrelevant search results; it is based on matching the parse tree of a query with the parse trees of
+candidate answers. In an alternative approach, a high-level structure of human-authored text is used to automatically
+build a template for a new topic for automatically written Wikipedia article.
+
+Two early question answering systems were BASEBALL and LUNAR. BASEBALL answered questions about the US baseball league
+over a period of one year. LUNAR, in turn, answered questions about the geological analysis of rocks returned by the
+Apollo moon missions. Both question answering systems were very effective in their chosen domains. In fact, LUNAR was
+demonstrated at a lunar science convention in 1971 and it was able to answer 90% of the questions in its domain posed
+by people untrained on the system. Further restricted-domain question answering systems were developed in the following
+years. The common feature of all these systems is that they had a core database or knowledge system that was
+hand-written by experts of the chosen domain. The language abilities of BASEBALL and LUNAR used techniques similar to
+ELIZA and DOCTOR, the first chatterbot programs.
+
+SHRDLU was a highly successful question-answering program developed by Terry Winograd in the late 1960s and early
+1970s. It simulated the operation of a robot in a toy world (the "blocks world"), and it offered the possibility of
+asking the robot questions about the state of the world. Again, the strength of this system was the choice of a very
+specific domain and a very simple world with rules of physics that were easy to encode in a computer program.
+
+In the 1970s, knowledge bases were developed that targeted narrower domains of knowledge. The question answering
+systems developed to interface with these expert systems produced more repeatable and valid responses to questions
+within an area of knowledge. These expert systems closely resembled modern question answering systems except in their
+internal architecture. Expert systems rely heavily on expert-constructed and organized knowledge bases, whereas many
+modern question answering systems rely on statistical processing of a large, unstructured, natural language text corpus.
+
+The 1970s and 1980s saw the development of comprehensive theories in computational linguistics, which led to the
+development of ambitious projects in text comprehension and question answering. One example of such a system was the
+Unix Consultant (UC), developed by Robert Wilensky at U.C. Berkeley in the late 1980s. The system answered questions
+pertaining to the Unix operating system. It had a comprehensive hand-crafted knowledge base of its domain, and it aimed
+at phrasing the answer to accommodate various types of users. Another project was LILOG, a text-understanding system
+that operated on the domain of tourism information in a German city. The systems developed in the UC and LILOG projects
+never went past the stage of simple demonstrations, but they helped the development of theories on computational
+linguistics and reasoning.
+
+Recently, specialized natural language question answering systems have been developed, such as EAGLi for health and
+life scientists, and Wolfram Alpha, an online computational knowledge engine that answers factual queries directly by
+computing the answer from externally sourced curated data.
+
+In information retrieval, an open domain question answering system aims at returning an answer in response to the
+user's question. The returned answer is in the form of short texts rather than a list of relevant documents. The system
+uses a combination of techniques from computational linguistics, information retrieval and knowledge representation for
+finding answers.
+
+The system takes a natural language question as an input rather than a set of keywords, for example, "When is the
+national day of China?" The sentence is then transformed into a query through its logical form. Having the input in the
+form of a natural language question makes the system more user-friendly, but harder to implement, as there are various
+question types and the system will have to identify the correct one in order to give a sensible answer. Assigning a
+question type to the question is a crucial task, the entire answer extraction process relies on finding the correct
+question type and hence the correct answer type.
+
+Keyword extraction is the first step for identifying the input question type. In some cases, there are clear words that
+indicate the question type directly. i.e. "Who", "Where" or "How many", these words tell the system that the answers
+should be of type "Person", "Location", "Number" respectively. In the example above, the word "When" indicates that the
+answer should be of type "Date". POS (part-of-speech) tagging and syntactic parsing techniques can also be used to
+determine the answer type. In this case, the subject is "Chinese National Day", the predicate is "is" and the adverbial
+modifier is "when", therefore the answer type is "Date". Unfortunately, some interrogative words like "Which", "What"
+or "How" do not give clear answer types. Each of these words can represent more than one type. In situations like this,
+other words in the question need to be considered. First thing to do is to find the words that can indicate the meaning
+of the question. A lexical dictionary such as WordNet can then be used for understanding the context.
+
+Once the question type has been identified, an information retrieval system is used to find a set of documents
+containing the correct key words. A tagger and NP/Verb Group chunker can be used to verify whether the correct entities
+and relations are mentioned in the found documents. For questions such as "Who" or "Where", a named-entity recogniser
+is used to find relevant "Person" and "Location" names from the retrieved documents. Only the relevant paragraphs are
+selected for ranking.
+
+A vector space model can be used as a strategy for classifying the candidate answers. Check if the answer is of the
+correct type as determined in the question type analysis stage. An inference technique can also be used to validate the
+candidate answers. A score is then given to each of these candidates according to the number of question words it
+contains and how close these words are to the candidate, the more and the closer the better. The answer is then
+translated into a compact and meaningful representation by parsing. In the previous example, the expected output answer
+is "1st Oct."
+
+A relationship extraction task requires the detection and classification of semantic relationship mentions within a set
+of artifacts, typically from text or XML documents. The task is very similar to that of information extraction (IE),
+but IE additionally requires the removal of repeated relations (disambiguation) and generally refers to the extraction
+of many different relationships.
+
+One approach to this problem involves the use of domain ontologies. Another approach involves visual detection of
+meaningful relationships in parametric values of objects listed on a data table that shift positions as the table is
+permuted automatically as controlled by the software user. The poor coverage, rarity and development cost related to
+structured resources such as semantic lexicons (e.g. WordNet, UMLS) and domain ontologies (e.g. the Gene Ontology) has
+given rise to new approaches based on broad, dynamic background knowledge on the Web. For instance, the ARCHILES
+technique uses only Wikipedia and search engine page count for acquiring coarse-grained relations to construct
+lightweight ontologies.
+
+Sentiment analysis (also known as opinion mining or emotion AI) refers to the use of natural language processing,
+text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study
+affective states and subjective information. Sentiment analysis is widely applied to voice of the customer materials
+such as reviews and survey responses, online and social media, and healthcare materials for applications that range
+from marketing to customer service to clinical medicine.
+
+A basic task in sentiment analysis is classifying the polarity of a given text at the document, sentence, or
+feature/aspect level—whether the expressed opinion in a document, a sentence or an entity feature/aspect is positive,
+negative, or neutral. Advanced, "beyond polarity" sentiment classification looks, for instance, at emotional states
+such as "angry", "sad", and "happy".
+
+Precursors to sentimental analysis include the General Inquirer,[1] which provided hints toward quantifying patterns in
+text and, separately, psychological research that examined a person's psychological state based on analysis of their
+verbal behavior.
+
+Subsequently, the method described in a patent by Volcani and Fogel, looked specifically at sentiment and identified
+individual words and phrases in text with respect to different emotional scales. A current system based on their work,
+called EffectCheck, presents synonyms that can be used to increase or decrease the level of evoked emotion in each
+scale.
+
+Many other subsequent efforts were less sophisticated, using a mere polar view of sentiment, from positive to negative,
+such as work by Turney, and Pang who applied different methods for detecting the polarity of product reviews and movie
+reviews respectively. This work is at the document level. One can also classify a document's polarity on a multi-way
+scale, which was attempted by Pang and Snyder among others: Pang and Lee[6] expanded the basic task of
+classifying a movie review as either positive or negative to predict star ratings on either a 3- or a 4-star scale,
+while Snyder performed an in-depth analysis of restaurant reviews, predicting ratings for various aspects of the given
+ restaurant, such as the food and atmosphere (on a five-star scale).
+
+First steps to bringing together various approaches—learning, lexical, knowledge-based, etc.—were taken in the 2004
+AAAI Spring Symposium where linguists, computer scientists, and other interested researchers first aligned interests
+and proposed shared tasks and benchmark data sets for the systematic computational research on affect, appeal,
+subjectivity, and sentiment in text.
+
+Even though in most statistical classification methods, the neutral class is ignored under the assumption that neutral
+texts lie near the boundary of the binary classifier, several researchers suggest that, as in every polarity problem,
+three categories must be identified. Moreover, it can be proven that specific classifiers such as the Max Entropy and
+SVMs can benefit from the introduction of a neutral class and improve the overall accuracy of the classification.
+There are in principle two ways for operating with a neutral class. Either, the algorithm proceeds by first identifying
+the neutral language, filtering it out and then assessing the rest in terms of positive and negative sentiments, or it
+builds a three-way classification in one step. This second approach often involves estimating a probability
+distribution over all categories (e.g. naive Bayes classifiers as implemented by the NLTK). Whether and how to use a
+neutral class depends on the nature of the data: if the data is clearly clustered into neutral, negative and positive
+language, it makes sense to filter the neutral language out and focus on the polarity between positive and negative
+sentiments. If, in contrast, the data are mostly neutral with small deviations towards positive and negative affect,
+this strategy would make it harder to clearly distinguish between the two poles.
+
+A different method for determining sentiment is the use of a scaling system whereby words commonly associated with
+having a negative, neutral, or positive sentiment with them are given an associated number on a −10 to +10 scale (most
+negative up to most positive) or simply from 0 to a positive upper limit such as +4. This makes it possible to adjust
+the sentiment of a given term relative to its environment (usually on the level of the sentence). When a piece of
+unstructured text is analyzed using natural language processing, each concept in the specified environment is given a
+score based on the way sentiment words relate to the concept and its associated score.This allows movement to
+a more sophisticated understanding of sentiment, because it is now possible to adjust the sentiment value of a concept
+relative to modifications that may surround it. Words, for example, that intensify, relax or negate the sentiment
+expressed by the concept can affect its score. Alternatively, texts can be given a positive and negative sentiment
+strength score if the goal is to determine the sentiment in a text rather than the overall polarity and strength of
+the text.
+
+This task is commonly defined as classifying a given text (usually a sentence) into one of two classes: objective or
+subjective. This problem can sometimes be more difficult than polarity classification. The subjectivity of words
+and phrases may depend on their context and an objective document may contain subjective sentences (e.g., a news
+article quoting people's opinions). Moreover, as mentioned by Su, results are largely dependent on the definition
+of subjectivity used when annotating texts. However, Pang showed that removing objective sentences from a document
+before classifying its polarity helped improve performance.
+
+It refers to determining the opinions or sentiments expressed on different features or aspects of entities, e.g., of a
+cell phone, a digital camera, or a bank. A feature or aspect is an attribute or component of an entity, e.g., the
+screen of a cell phone, the service for a restaurant, or the picture quality of a camera. The advantage of
+feature-based sentiment analysis is the possibility to capture nuances about objects of interest. Different features
+can generate different sentiment responses, for example a hotel can have a convenient location, but mediocre food. This
+problem involves several sub-problems, e.g., identifying relevant entities, extracting their features/aspects, and
+determining whether an opinion expressed on each feature/aspect is positive, negative or neutral. The automatic
+identification of features can be performed with syntactic methods, with topic modeling, or with deep learning.
+
+Existing approaches to sentiment analysis can be grouped into three main categories: knowledge-based techniques,
+statistical methods, and hybrid approaches. Knowledge-based techniques classify text by affect categories based on the
+presence of unambiguous affect words such as happy, sad, afraid, and bored. Some knowledge bases not only list obvious
+affect words, but also assign arbitrary words a probable "affinity" to particular emotions. Statistical methods
+leverage elements from machine learning such as latent semantic analysis, support vector machines, "bag of words",
+"Pointwise Mutual Information" for Semantic Orientation, and deep learning. More sophisticated methods try to detect
+the holder of a sentiment (i.e., the person who maintains that affective state) and the target (i.e., the entity about
+which the affect is felt). To mine the opinion in context and get the feature about which the speaker has opined, the
+grammatical relationships of words are used. Grammatical dependency relations are obtained by deep parsing of the text.
+Hybrid approaches leverage both machine learning and elements from knowledge representation such as ontologies and
+semantic networks in order to detect semantics that are expressed in a subtle manner, e.g., through the analysis of
+concepts that do not explicitly convey relevant information, but which are implicitly linked to other concepts that do
+so.
+
+Open source software tools as well as range of free and paid sentiment analysis tools deploy machine learning,
+statistics, and natural language processing techniques to automate sentiment analysis on large collections of texts,
+including web pages, online news, internet discussion groups, online reviews, web blogs, and social media.
+Knowledge-based systems, on the other hand, make use of publicly available resources, to extract the semantic and
+affective information associated with natural language concepts. Sentiment analysis can also be performed on visual
+content, i.e., images and videos (see Multimodal sentiment analysis). One of the first approaches in this direction is
+SentiBank utilizing an adjective noun pair representation of visual content. In addition, the vast majority of
+sentiment classification approaches rely on the bag-of-words model, which disregards context, grammar and even word
+order. Approaches that analyses the sentiment based on how words compose the meaning of longer phrases have shown
+better result, but they incur an additional annotation overhead.
+
+A human analysis component is required in sentiment analysis, as automated systems are not able to analyze historical
+tendencies of the individual commenter, or the platform and are often classified incorrectly in their expressed
+sentiment. Automation impacts approximately 23% of comments that are correctly classified by humans. However, humans
+often disagree, and it is argued that the inter-human agreement provides an upper bound that automated sentiment
+classifiers can eventually reach.
+
+Sometimes, the structure of sentiments and topics is fairly complex. Also, the problem of sentiment analysis is
+non-monotonic in respect to sentence extension and stop-word substitution (compare THEY would not let my dog stay in
+this hotel vs I would not let my dog stay in this hotel). To address this issue a number of rule-based and
+reasoning-based approaches have been applied to sentiment analysis, including defeasible logic programming. Also, there
+is a number of tree traversal rules applied to syntactic parse tree to extract the topicality of sentiment in open
+domain setting.
+
+The accuracy of a sentiment analysis system is, in principle, how well it agrees with human judgments. This is usually
+measured by variant measures based on precision and recall over the two target categories of negative and positive
+texts. However, according to research human raters typically only agree about 80% of the time (see Inter-rater
+reliability). Thus, a program which achieves 70% accuracy in classifying sentiment is doing nearly as well as humans,
+even though such accuracy may not sound impressive. If a program were "right" 100% of the time, humans would still
+disagree with it about 20% of the time, since they disagree that much about any answer. On the other hand, computer
+systems will make very different errors than human assessors, and thus the figures are not entirely comparable. For
+instance, a computer system will have trouble with negations, exaggerations, jokes, or sarcasm, which typically are
+easy to handle for a human reader: some errors a computer system makes will seem overly naive to a human. In general,
+the utility for practical commercial tasks of sentiment analysis as it is defined in academic research has been called
+into question, mostly since the simple one-dimensional model of sentiment from negative to positive yields rather
+little actionable information for a client worrying about the effect of public discourse on e.g. brand or corporate
+reputation.
+
+The rise of social media such as blogs and social networks has fueled interest in sentiment analysis. With the
+proliferation of reviews, ratings, recommendations and other forms of online expression, online opinion has turned into
+a kind of virtual currency for businesses looking to market their products, identify new opportunities and manage their
+reputations. As businesses look to automate the process of filtering out the noise, understanding the conversations,
+identifying the relevant content and actioning it appropriately, many are now looking to the field of sentiment
+analysis. Further complicating the matter, is the rise of anonymous social media platforms such as 4chan and Reddit. If
+web 2.0 was all about democratizing publishing, then the next stage of the web may well be based on democratizing data
+mining of all the content that is getting published.
+
+One step towards this aim is accomplished in research. Several research teams in universities around the world
+currently focus on understanding the dynamics of sentiment in e-communities through sentiment analysis. The
+CyberEmotions project, for instance, recently identified the role of negative emotions in driving social networks
+discussions.
+
+The problem is that most sentiment analysis algorithms use simple terms to express sentiment about a product or
+service. However, cultural factors, linguistic nuances and differing contexts make it extremely difficult to turn a
+string of written text into a simple pro or con sentiment. The fact that humans often disagree on the sentiment of text
+illustrates how big a task it is for computers to get this right. The shorter the string of text, the harder it becomes.
+
+Even though short text strings might be a problem, sentiment analysis within microblogging has shown that Twitter can
+be seen as a valid online indicator of political sentiment. Tweets' political sentiment demonstrates close
+correspondence to parties' and politicians' political positions, indicating that the content of Twitter messages
+plausibly reflects the offline political landscape. Furthermore, sentiment analysis on Twitter has also been shown
+to capture the public mood behind human reproduction cycles on a planetary scale[peacock term], as well as other
+problems of public-health relevance such as adverse drug reactions.
+
+For a recommender system, sentiment analysis has been proven to be a valuable technique. A recommender system aims to
+predict the preference to an item of a target user. Mainstream recommender systems work on explicit data set. For
+example, collaborative filtering works on the rating matrix, and content-based filtering works on the meta-data of the
+items.
+
+In many social networking services or e-commerce websites, users can provide text review, comment or feedback to the
+items. These user-generated text provide a rich source of user's sentiment opinions about numerous products and items.
+Potentially, for an item, such text can reveal both the related feature/aspects of the item and the users' sentiments
+on each feature. The item's feature/aspects described in the text play the same role with the meta-data in
+content-based filtering, but the former are more valuable for the recommender system. Since these features are broadly
+mentioned by users in their reviews, they can be seen as the most crucial features that can significantly influence the
+user's experience on the item, while the meta-data of the item (usually provided by the producers instead of consumers)
+may ignore features that are concerned by the users. For different items with common features, a user may give
+different sentiments. Also, a feature of the same item may receive different sentiments from different users. Users'
+sentiments on the features can be regarded as a multi-dimensional rating score, reflecting their preference on the
+items.
+
+Based on the feature/aspects and the sentiments extracted from the user-generated text, a hybrid recommender system can
+be constructed. There are two types of motivation to recommend a candidate item to a user. The first motivation is the
+candidate item have numerous common features with the user's preferred items, while the second motivation is that
+the candidate item receives a high sentiment on its features. For a preferred item, it is reasonable to believe that
+items with the same features will have a similar function or utility. So, these items will also likely to be preferred
+by the user. On the other hand, for a shared feature of two candidate items, other users may give positive sentiment to
+one of them while give negative sentiment to another. Clearly, the high evaluated item should be recommended to the
+user. Based on these two motivations, a combination ranking score of similarity and sentiment rating can be constructed
+for each candidate item.
+
+Except the difficulty of the sentiment analysis itself, applying sentiment analysis on reviews or feedback also face
+the challenge of spam and biased reviews. One direction of work is focused on evaluating the helpfulness of each
+review. Review or feedback poorly written are hardly helpful for recommender system. Besides, a review can be designed
+to hinder sales of a target product, thus be harmful to the recommender system even it is well written.
+
+Researchers also found that long and short form of user-generated text should be treated differently. An interesting
+result shows that short form reviews are sometimes more helpful than long form,[60] because it is easier to filter out
+the noise in a short form text. For the long form text, the growing length of the text does not always bring a
+proportionate increase of the number of features or sentiments in the text.
+
+Text segmentation is the process of dividing written text into meaningful units, such as words, sentences, or topics.
+The term applies both to mental processes used by humans when reading text, and to artificial processes implemented in
+computers, which are the subject of natural language processing. The problem is non-trivial, because while some written
+languages have explicit word boundary markers, such as the word spaces of written English and the distinctive initial,
+medial and final letter shapes of Arabic, such signals are sometimes ambiguous and not present in all written languages.
+
+When punctuation and similar clues are not consistently available, the segmentation task often requires fairly
+non-trivial techniques, such as statistical decision-making, large dictionaries, as well as consideration of syntactic
+and semantic constraints. Effective natural language processing systems and text segmentation tools usually operate on
+text in specific domains and sources. As an example, processing text used in medical records is a very different
+problem than processing news articles or real estate advertisements.
+
+In computational linguistics, word-sense disambiguation (WSD) is an open problem concerned with identifying which sense
+of a word is used in a sentence. The solution to this problem impacts other computer-related writing, such as
+discourse, improving relevance of search engines, anaphora resolution, coherence, inference.
+
+The human brain is quite proficient at word-sense disambiguation. That natural language is formed in a way that
+requires so much of it is a reflection of that neurologic reality. In other words, human language developed in a way
+that reflects (and also has helped to shape) the innate ability provided by the brain's neural networks. In computer
+science and the information technology that it enables, it has been a long-term challenge to develop the ability in
+computers to do natural language processing and machine learning.
+
+A rich variety of techniques have been researched, from dictionary-based methods that use the knowledge encoded in
+lexical resources, to supervised machine learning methods in which a classifier is trained for each distinct word on a
+corpus of manually sense-annotated examples, to completely unsupervised methods that cluster occurrences of words,
+thereby inducing word senses. Among these, supervised learning approaches have been the most successful algorithms to
+date.
+
+Accuracy of current algorithms is difficult to state without a host of caveats. In English, accuracy at the
+coarse-grained (homograph) level is routinely above 90%, with some methods on particular homographs achieving over 96%.
+On finer-grained sense distinctions, top accuracies from 59.1% to 69.0% have been reported in evaluation exercises
+(SemEval-2007, Senseval-2), where the baseline accuracy of the simplest possible algorithm of always choosing the most
+frequent sense was 51.4% and 57%, respectively.
+
+One problem with word sense disambiguation is deciding what the senses are. In cases like the word bass above, at least
+some senses are obviously different. In other cases, however, the different senses can be closely related (one meaning
+being a metaphorical or metonymic extension of another), and in such cases division of words into senses becomes much
+more difficult. Different dictionaries and thesauruses will provide different divisions of words into senses. One
+solution some researchers have used is to choose a particular dictionary, and just use its set of senses. Generally,
+however, research results using broad distinctions in senses have been much better than those using narrow ones.
+However, given the lack of a full-fledged coarse-grained sense inventory, most researchers continue to work on
+fine-grained WSD.
+
+Most research in the field of WSD is performed by using WordNet as a reference sense inventory for English. WordNet is
+a computational lexicon that encodes concepts as synonym sets (e.g. the concept of car is encoded as { car, auto,
+automobile, machine, motorcar }). Other resources used for disambiguation purposes include Roget's Thesaurus and
+Wikipedia. More recently, BabelNet, a multilingual encyclopedic dictionary, has been used for multilingual WSD.
+
+In any real test, part-of-speech tagging and sense tagging are very closely related with each potentially making
+constraints to the other. And the question whether these tasks should be kept together or decoupled is still not
+unanimously resolved, but recently scientists incline to test these things separately (e.g. in the Senseval/SemEval
+competitions parts of speech are provided as input for the text to disambiguate).
+
+It is instructive to compare the word sense disambiguation problem with the problem of part-of-speech tagging. Both
+involve disambiguating or tagging with words, be it with senses or parts of speech. However, algorithms used for one do
+not tend to work well for the other, mainly because the part of speech of a word is primarily determined by the
+immediately adjacent one to three words, whereas the sense of a word may be determined by words further away. The
+success rate for part-of-speech tagging algorithms is at present much higher than that for WSD, state-of-the art being
+around 95%[citation needed] accuracy or better, as compared to less than 75%[citation needed] accuracy in word sense
+disambiguation with supervised learning. These figures are typical for English, and may be very different from those
+for other languages.
+
+Another problem is inter-judge variance. WSD systems are normally tested by having their results on a task compared
+against those of a human. However, while it is relatively easy to assign parts of speech to text, training people to
+tag senses is far more difficult. While users can memorize all of the possible parts of speech a word can take, it is
+often impossible for individuals to memorize all of the senses a word can take. Moreover, humans do not agree on the
+task at hand – give a list of senses and sentences, and humans will not always agree on which word belongs in which
+sense.
+
+As human performance serves as the standard, it is an upper bound for computer performance. Human performance, however,
+is much better on coarse-grained than fine-grained distinctions, so this again is why research on coarse-grained
+distinctions has been put to test in recent WSD evaluation exercises.
+
+A task-independent sense inventory is not a coherent concept: each task requires its own division of word meaning into
+senses relevant to the task. For example, the ambiguity of 'mouse' (animal or device) is not relevant in English-French
+machine translation, but is relevant in information retrieval. The opposite is true of 'river', which requires a choice
+in French (fleuve 'flows into the sea', or rivière 'flows into a river').
+
+Also, completely different algorithms might be required by different applications. In machine translation, the problem
+takes the form of target word selection. Here, the "senses" are words in the target language, which often correspond to
+significant meaning distinctions in the source language ("bank" could translate to the French "banque"—that is,
+'financial bank' or "rive"—that is, 'edge of river'). In information retrieval, a sense inventory is not necessarily
+required, because it is enough to know that a word is used in the same sense in the query and a retrieved document;
+what sense that is, is unimportant.
+
+Finally, the very notion of "word sense" is slippery and controversial. Most people can agree in distinctions at the
+coarse-grained homograph level (e.g., pen as writing instrument or enclosure), but go down one level to fine-grained
+polysemy, and disagreements arise. For example, in Senseval-2, which used fine-grained sense distinctions, human
+annotators agreed in only 85% of word occurrences. Word meaning is in principle infinitely variable and context
+sensitive. It does not divide up easily into distinct or discrete sub-meanings. Lexicographers frequently discover
+in corpora loose and overlapping word meanings, and standard or conventional meanings extended, modulated, and
+exploited in a bewildering variety of ways. The art of lexicography is to generalize from the corpus to definitions
+that evoke and explain the full range of meaning of a word, making it seem like words are well-behaved semantically.
+However, it is not at all clear if these same meaning distinctions are applicable in computational applications, as the
+decisions of lexicographers are usually driven by other considerations. In 2009, a task – named lexical substitution –
+was proposed as a possible solution to the sense discreteness problem. The task consists of providing a substitute
+for a word in context that preserves the meaning of the original word (potentially, substitutes can be chosen from the
+full lexicon of the target language, thus overcoming discreteness).
+
+Deep approaches presume access to a comprehensive body of world knowledge. Knowledge, such as "you can go fishing for a
+type of fish, but not for low frequency sounds" and "songs have low frequency sounds as parts, but not types of fish",
+is then used to determine in which sense the word bass is used. These approaches are not very successful in practice,
+mainly because such a body of knowledge does not exist in a computer-readable format, outside very limited domains.
+However, if such knowledge did exist, then deep approaches would be much more accurate than the shallow approaches.
+Also, there is a long tradition in computational linguistics, of trying such approaches in terms of coded knowledge and
+in some cases, it is hard to say clearly whether the knowledge involved is linguistic or world knowledge. The first
+attempt was that by Margaret Masterman and her colleagues, at the Cambridge Language Research Unit in England, in the
+1950s. This attempt used as data a punched-card version of Roget's Thesaurus and its numbered "heads", as an indicator
+of topics and looked for repetitions in text, using a set intersection algorithm. It was not very successful, but had
+strong relationships to later work, especially Yarowsky's machine learning optimisation of a thesaurus method in the
+1990s.
+
+Shallow approaches don't try to understand the text. They just consider the surrounding words, using information such
+as "if bass has words sea or fishing nearby, it probably is in the fish sense; if bass has the words music or song
+nearby, it is probably in the music sense." These rules can be automatically derived by the computer, using a training
+corpus of words tagged with their word senses. This approach, while theoretically not as powerful as deep approaches,
+gives superior results in practice, due to the computer's limited world knowledge. However, it can be confused by
+sentences like The dogs bark at the tree which contains the word bark near both tree and dogs.
+
+The Lesk algorithm is the seminal dictionary-based method. It is based on the hypothesis that words used together in
+text are related to each other and that the relation can be observed in the definitions of the words and their senses.
+Two (or more) words are disambiguated by finding the pair of dictionary senses with the greatest word overlap in their
+dictionary definitions. For example, when disambiguating the words in "pine cone", the definitions of the appropriate
+senses both include the words evergreen and tree (at least in one dictionary). A similar approach searches for the
+shortest path between two words: the second word is iteratively searched among the definitions of every semantic
+variant of the first word, then among the definitions of every semantic variant of each word in the previous
+definitions and so on. Finally, the first word is disambiguated by selecting the semantic variant which minimizes the
+distance from the first to the second word.
+
+An alternative to the use of the definitions is to consider general word-sense relatedness and to compute the semantic
+similarity of each pair of word senses based on a given lexical knowledge base such as WordNet. Graph-based methods
+reminiscent of spreading activation research of the early days of AI research have been applied with some success. More
+complex graph-based approaches have been shown to perform almost as well as supervised methods or even
+outperforming them on specific domains. Recently, it has been reported that simple graph connectivity measures, such as
+degree, perform state-of-the-art WSD in the presence of a sufficiently rich lexical knowledge base. Also, automatically
+transferring knowledge in the form of semantic relations from Wikipedia to WordNet has been shown to boost simple
+knowledge-based methods, enabling them to rival the best supervised systems and even outperform them in a
+domain-specific setting.
+
+Supervised methods are based on the assumption that the context can provide enough evidence on its own to disambiguate
+words (hence, common sense and reasoning are deemed unnecessary). Probably every machine learning algorithm going has
+been applied to WSD, including associated techniques such as feature selection, parameter optimization, and ensemble
+learning. Support Vector Machines and memory-based learning have been shown to be the most successful approaches, to
+date, probably because they can cope with the high-dimensionality of the feature space. However, these supervised
+methods are subject to a new knowledge acquisition bottleneck since they rely on substantial amounts of manually
+sense-tagged corpora for training, which are laborious and expensive to create.
+
+Because of the lack of training data, many word sense disambiguation algorithms use semi-supervised learning, which
+allows both labeled and unlabeled data. The Yarowsky algorithm was an early example of such an algorithm. It uses the
+‘One sense per collocation’ and the ‘One sense per discourse’ properties of human languages for word sense
+disambiguation. From observation, words tend to exhibit only one sense in most given discourse and in a given
+collocation.
+
+The bootstrapping approach starts from a small amount of seed data for each word: either manually tagged training
+examples or a small number of surefire decision rules (e.g., 'play' in the context of 'bass' almost always indicates
+the musical instrument). The seeds are used to train an initial classifier, using any supervised method. This
+classifier is then used on the untagged portion of the corpus to extract a larger training set, in which only the most
+confident classifications are included. The process repeats, each new classifier being trained on a successively larger
+training corpus, until the whole corpus is consumed, or until a given maximum number of iterations is reached.
+
+Other semi-supervised techniques use large quantities of untagged corpora to provide co-occurrence information that
+supplements the tagged corpora. These techniques have the potential to help in the adaptation of supervised models to
+different domains.
+
+Also, an ambiguous word in one language is often translated into different words in a second language depending on the
+sense of the word. Word-aligned bilingual corpora have been used[by whom?] to infer cross-lingual sense distinctions, a
+kind of semi-supervised system.
+
+Unsupervised learning is the greatest challenge for WSD researchers. The underlying assumption is that similar senses
+occur in similar contexts, and thus senses can be induced from text by clustering word occurrences using some measure
+of similarity of context, a task referred to as word sense induction or discrimination. Then, new occurrences of the
+word can be classified into the closest induced clusters/senses. Performance has been lower than for the other methods
+described above, but comparisons are difficult since senses induced must be mapped to a known dictionary of word
+senses. If a mapping to a set of dictionary senses is not desired, cluster-based evaluations (including measures of
+entropy and purity) can be performed. Alternatively, word sense induction methods can be tested and compared within an
+application. For instance, it has been shown that word sense induction improves Web search result clustering by
+increasing the quality of result clusters and the degree diversification of result lists. It is hoped that unsupervised
+learning will overcome the knowledge acquisition bottleneck because they are not dependent on manual effort.
+
+The knowledge acquisition bottleneck is perhaps the major impediment to solving the WSD problem. Unsupervised methods
+rely on knowledge about word senses, which is only sparsely formulated in dictionaries and lexical databases.
+Supervised methods depend crucially on the existence of manually annotated examples for every word sense, a requisite
+that can so far be met only for a handful of words for testing purposes, as it is done in the Senseval exercises.
+
+One of the most promising trends in WSD research is using the largest corpus ever accessible, the World Wide Web, to
+acquire lexical information automatically. WSD has been traditionally understood as an intermediate language
+engineering technology which could improve applications such as information retrieval (IR). In this case, however, the
+reverse is also true: web search engines implement simple and robust IR techniques that can successfully mine the Web
+for information to use in WSD. The historic lack of training data has provoked the appearance of some new algorithms
+and techniques, as described in Automatic acquisition of sense-tagged corpora.
+
+Comparing and evaluating different WSD systems is extremely difficult, because of the different test sets, sense
+inventories, and knowledge resources adopted. Before the organization of specific evaluation campaigns most systems
+were assessed on in-house, often small-scale, data sets. In order to test one's algorithm, developers should spend
+their time to annotate all word occurrences. And comparing methods even on the same corpus is not eligible if there is
+different sense inventories.
+
+In order to define common evaluation datasets and procedures, public evaluation campaigns have been organized. Senseval
+(now renamed SemEval) is an international word sense disambiguation competition, held every three years since 1998:
+Senseval-1 (1998), Senseval-2 (2001), Senseval-3 (2004), and its successor, SemEval (2007). The objective of the
+competition is to organize different lectures, preparing and hand-annotating corpus for testing systems, perform a
+comparative evaluation of WSD systems in several kinds of tasks, including all-words and lexical sample WSD for
+different languages, and, more recently, new tasks such as semantic role labeling, gloss WSD, lexical substitution,
+etc. The systems submitted for evaluation to these competitions usually integrate different techniques and often
+combine supervised and knowledge-based methods (especially for avoiding bad performance in lack of training examples).
+
