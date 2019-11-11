@@ -1,5 +1,5 @@
-matplotlib==2.0.2
-numpy==1.13.1
+matplotlib
+numpy
 pandas==0.21
 nltk==3.3.0
 spacy==2.0.11

@@ -3,8 +3,8 @@ channels:
   - defaults
 dependencies:
   - python>=3.5
-  - numpy=1.13.1
-  - matplotlib=2.0.2
+  - numpy
+  - matplotlib
   - pandas=0.21
   - pytest=3.2.1
   - pytest-cov=2.5.1
