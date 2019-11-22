@@ -5,9 +5,9 @@ dependencies:
   - python>=3.5
   - numpy
   - matplotlib
-  - pandas=0.21
-  - nltk=3.3.0
-  - spacy=2.0.11
+  - pandas
+  - nltk
+  - spacy
   - scikit-learn
   - gensim
   - pip:

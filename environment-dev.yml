@@ -5,12 +5,11 @@ dependencies:
   - python>=3.5
   - numpy
   - matplotlib
-  - pandas=0.21
-  - pytest=3.2.1
-  - pytest-cov=2.5.1
-  - nltk=3.3.0
-  - spacy
+  - pandas
   - pytest
+  - pytest-cov
+  - nltk
+  - spacy
   - Sphinx
   - numpydoc
   - scikit-learn

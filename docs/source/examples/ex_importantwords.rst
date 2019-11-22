@@ -154,7 +154,7 @@ Determine most important words per document (or for this example, per paragraph)
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  23.173 seconds)
+   **Total running time of the script:** ( 0 minutes  10.994 seconds)
 
 
 .. _sphx_glr_download_examples_ex_importantwords.py:

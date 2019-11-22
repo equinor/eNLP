@@ -133,7 +133,7 @@ Wordcloud comparison between most common words
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  22.693 seconds)
+   **Total running time of the script:** ( 0 minutes  8.964 seconds)
 
 
 .. _sphx_glr_download_examples_ex_nlp_pipeline.py:

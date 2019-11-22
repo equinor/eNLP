@@ -23,6 +23,7 @@ dev-install:
 	make pipcheck
 	$(PIP) install -r requirements-dev.txt && $(PIP) install -e .
 
+
 install_conda:
 	make pipcheck
 	conda env create -f environment.yml && source activate enlp && pip install .

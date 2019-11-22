@@ -13,8 +13,6 @@ The following example illustrates how to generate word vectors from a corpus, sa
 a custom spacy language model with them.
 
 
-
-
 .. code-block:: default
 
 
@@ -95,7 +93,7 @@ Just to show how you can load them back in
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.430 seconds)
+   **Total running time of the script:** ( 0 minutes  0.456 seconds)
 
 
 .. _sphx_glr_download_examples_ex_wordvectorcreation.py:

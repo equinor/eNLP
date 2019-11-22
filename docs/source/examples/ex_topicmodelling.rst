@@ -92,11 +92,11 @@ Create topic model & visualise keywords per topic
  .. code-block:: none
 
     Topic: 0 
-     Words: 0.009*"language" + 0.008*"word" + 0.008*"sense" + 0.007*"words" + 0.006*"natural" + 0.006*"systems" + 0.004*"human" + 0.004*"text" + 0.004*"learning" + 0.004*"system"
+     Words: 0.010*"word" + 0.009*"sense" + 0.008*"based" + 0.006*"language" + 0.006*"learning" + 0.006*"systems" + 0.005*"words" + 0.005*"senses" + 0.005*"WSD" + 0.004*"methods"
     Topic: 1 
-     Words: 0.010*"sentiment" + 0.009*"word" + 0.008*"knowledge" + 0.007*"language" + 0.007*"analysis" + 0.007*"text" + 0.006*"words" + 0.006*"systems" + 0.006*"sense" + 0.006*"based"
+     Words: 0.010*"language" + 0.007*"text" + 0.007*"systems" + 0.007*"system" + 0.006*"data" + 0.006*"natural" + 0.005*"processing" + 0.005*"knowledge" + 0.005*"question" + 0.004*"sentiment"
     Topic: 2 
-     Words: 0.009*"text" + 0.007*"systems" + 0.007*"sentiment" + 0.007*"system" + 0.006*"language" + 0.006*"words" + 0.005*"research" + 0.005*"based" + 0.005*"." + 0.005*"data"
+     Words: 0.010*"sentiment" + 0.010*"words" + 0.008*"word" + 0.008*"text" + 0.007*"analysis" + 0.006*"systems" + 0.006*"language" + 0.005*"." + 0.005*"sense" + 0.005*"system"
 
 
 
@@ -130,7 +130,7 @@ Determine the topic of a new document
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  0.084 seconds)
+   **Total running time of the script:** ( 0 minutes  13.772 seconds)
 
 
 .. _sphx_glr_download_examples_ex_topicmodelling.py:

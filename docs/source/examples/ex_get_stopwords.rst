@@ -143,7 +143,7 @@ Get stopwords: the stopwords function will get all english and norwegian stopwor
 
  .. code-block:: none
 
-    ['take', 'except', 'using', 'ca', 'from']
+    ['nobody', 'thus', 'beyond', 'these', 'will']
 
 
 
@@ -226,7 +226,7 @@ viewing the text output is to look at the distribution of the remaining text
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  21.887 seconds)
+   **Total running time of the script:** ( 0 minutes  11.389 seconds)
 
 
 .. _sphx_glr_download_examples_ex_get_stopwords.py:

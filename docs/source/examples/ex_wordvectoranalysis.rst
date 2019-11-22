@@ -13,7 +13,6 @@ The following example illustrates how to find most similar words, simple word ve
 visualise similar words in a compressed vector space.
 
 
-
 .. code-block:: default
 
     import matplotlib.pyplot as plt
@@ -43,6 +42,15 @@ Download vectors - this can be swapped with loading your own vectors
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /Users/clbi/Documents/eNLP/examples/ex_wordvectoranalysis.py:20: DeprecationWarning: Call to deprecated `wv` (Attribute will be removed in 4.0.0, use self instead).
+      wvs = model.wv #load the vectors from the model
+
 
 
 Most similar word to happy
@@ -63,7 +71,7 @@ Most similar word to happy
 
  .. code-block:: none
 
-    [('glad', 0.7408890724182129), ('pleased', 0.6632170677185059), ('ecstatic', 0.6626912355422974), ('overjoyed', 0.6599286794662476), ('thrilled', 0.6514049768447876)]
+    [('glad', 0.7408890128135681), ('pleased', 0.6632171273231506), ('ecstatic', 0.6626912355422974), ('overjoyed', 0.6599286794662476), ('thrilled', 0.6514049768447876)]
 
 
 
@@ -110,7 +118,7 @@ Vector Maths - Past tense of walk?
 
  .. code-block:: none
 
-    [('walked', 0.7423240542411804)]
+    [('walked', 0.7423241138458252)]
 
 
 
@@ -188,7 +196,7 @@ Visualising vectors
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 4 minutes  23.871 seconds)
+   **Total running time of the script:** ( 1 minutes  58.855 seconds)
 
 
 .. _sphx_glr_download_examples_ex_wordvectoranalysis.py:

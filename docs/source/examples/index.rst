@@ -14,7 +14,7 @@ Below is a gallery of examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip=" ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Custom Spacy Language Models">
 
 .. only:: html
 
@@ -174,7 +174,7 @@ Below is a gallery of examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip=" ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Word Vector Creation">
 
 .. only:: html
 

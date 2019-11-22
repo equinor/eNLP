@@ -74,12 +74,21 @@ Visualise
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /Users/clbi/Documents/eNLP/examples/ex_visualise_distribution.py:32: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+      plt.show()
+
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.557 seconds)
+   **Total running time of the script:** ( 0 minutes  1.051 seconds)
 
 
 .. _sphx_glr_download_examples_ex_visualise_distribution.py:
