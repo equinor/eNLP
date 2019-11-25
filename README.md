@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/equinor/eNLP.svg?branch=master)](https://travis-ci.org/equinor/eNLP)
+[![Azure Status](https://dev.azure.com/eNLP/eNLP/_apis/build/status/equinor.eNLP?branchName=master)](https://dev.azure.com/eNLP/eNLP/_build/latest?definitionId=1&branchName=master)
+
 # Equinor Shared NLP Package
 This package contains functions often used in NLP ranging from processing to visualisation. The purpose behind the 
 package is to collect in one place common functions where a package can be installed to setup an nlp-focussed
