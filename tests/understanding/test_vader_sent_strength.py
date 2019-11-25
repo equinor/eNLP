@@ -7,6 +7,9 @@ import pytest
 from enlp.understanding.sentiment import vader_sentiment_strength
 import pandas as pd
 
+import nltk
+nltk.download('vader_lexicon')
+
 def test_sent_strength_simple():
 
     # arange
