@@ -12,7 +12,7 @@ descr = """
 
 # Setup
 setup(
-    name='eNLP',
+    name='enlp',
     description=descr,
     long_description=open(src('README.md')).read(),
     long_description_content_type='text/markdown',
