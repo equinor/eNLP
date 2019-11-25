@@ -19,13 +19,14 @@ def test_sent_strength_simple():
     # act
     sent_scores = vader_sentiment_strength(textlist)
 
-    # assert
-    asserted_scores_dicts = [{'text': 'happy',
-                              'compound': 0.5719,
-                              'negative': 0.0,
-                              'positive': 1.0,
-                              'neutral': 0.0},
-                             ]
-    asserted_scores = pd.DataFrame(asserted_scores_dicts)
+    print (sent_scores['text'].values[0])
 
-    assert sent_scores.equals(asserted_scores)
+    # assert
+    asserted_scores_dicts = {'text': 'happy',
+                             'compound': 0.5719,
+                             'negative': 0.0,
+                             'positive': 1.0,
+                             'neutral': 0.0}
+
+    for key in asserted_scores_dicts:
+        assert sent_scores[key].values[0] == asserted_scores_dicts[key]
