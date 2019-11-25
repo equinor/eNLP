@@ -2,7 +2,7 @@ name: enlp
 channels:
   - defaults
 dependencies:
-  - python>=3.5
+  - python>=3.7
   - numpy
   - matplotlib
   - pandas
