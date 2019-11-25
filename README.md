@@ -8,11 +8,21 @@ environment and most common nlp tasks can be carried out without having to insta
 If you just wish to use the package, download the repo and run 
 
     $ make install_conda
-
+    
 which will create a conda environment with the package installed and all the necessary requirements. Prior to using
 the package remember to change into your new environment.
 
     $ source activate enlp
+    
+For those who prefer not to use conda, download the repo and run
+
+    $ make install
+    
+And for Windows users, download the repo and run
+
+    $ pip install -r requirements.txt
+    $ pip install .
+
 
 ## EXAMPLE USAGE
 The documentation has a number of example usages in its gallery. 
@@ -32,7 +42,16 @@ And then open the documentation and navigate to the example gallery,
 If you wish to edit or contribute to the package, you can make an environment and install the package, with
 
     $ make dev-install_conda
+    
+or, if you prefer not to use conda, 
 
+    $ make dev-install
+    
+or, for windows users,
+
+    $ pip install -r requirements-dev.txt
+    $ pip install -e .
+    
 Please make the documentation and read the section on contributing. 
 
     $ make doc
