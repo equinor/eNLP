@@ -1,0 +1,17 @@
+numpy
+matplotlib
+pandas
+nltk
+spacy==2.0.18
+Sphinx
+numpydoc
+scikit-learn
+gensim
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.0.0/en_core_web_md-2.0.0.tar.gz
+setuptools_scm
+sphinx-rtd-theme
+sphinx-gallery
+nbsphinx
+image
+wordcloud
+rake-nltk
