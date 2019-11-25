@@ -9,7 +9,7 @@ dependencies:
   - pytest
   - pytest-cov
   - nltk
-  - spacy
+  - spacy=2.0.18
   - Sphinx
   - numpydoc
   - scikit-learn

@@ -7,7 +7,7 @@ dependencies:
   - matplotlib
   - pandas
   - nltk
-  - spacy
+  - spacy=2.0.18
   - scikit-learn
   - gensim
   - pip:
