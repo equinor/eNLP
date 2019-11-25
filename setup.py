@@ -23,7 +23,7 @@ setup(
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)',
         'Natural Language :: English',
-        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Topic :: Scientific/Engineering :: Mathematics'
     ],
     author='Equinor ASA',
