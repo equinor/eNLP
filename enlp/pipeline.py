@@ -3,9 +3,10 @@ Class for piping functions for natural language processing
 """
 
 from enlp.processing.stdtools import *
+from enlp.understanding.linguistic import pos_tag
 
 
-class nlp_pipeline(object):
+class NLPPipeline(object):
     """Pipeline class for combining functions from nlp_tools
 
     Attributes
