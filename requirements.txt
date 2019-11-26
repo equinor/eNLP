@@ -2,7 +2,7 @@ matplotlib
 numpy
 pandas
 nltk
-spacy
+spacy==2.0.18
 wordcloud
 https://github.com/ohenrik/nb_dep_ud_sm/raw/master/nb_dep_ud_sm-0.0.1/dist/nb_dep_ud_sm-0.0.1.tar.gz
 https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.0.0/en_core_web_md-2.0.0.tar.gz

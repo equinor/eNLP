@@ -1,0 +1,14 @@
+numpy
+matplotlib
+pandas
+nltk
+spacy==2.0.18
+Sphinx
+numpydoc
+scikit-learn
+setuptools_scm
+sphinx-rtd-theme
+sphinx-gallery
+nbsphinx
+image
+wordcloud
