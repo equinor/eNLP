@@ -1,3 +1,4 @@
+[![PyPI version](https://badge.fury.io/py/enlp.svg)](https://badge.fury.io/py/enlp)
 [![Build Status](https://travis-ci.org/equinor/eNLP.svg?branch=master)](https://travis-ci.org/equinor/eNLP)
 [![Azure Status](https://dev.azure.com/eNLP/eNLP/_apis/build/status/equinor.eNLP?branchName=master)](https://dev.azure.com/eNLP/eNLP/_build/latest?definitionId=1&branchName=master)
 ![OS-support](https://img.shields.io/badge/OS-linux,win,osx-850A8B.svg)
@@ -9,6 +10,10 @@ package is to collect in one place common functions where a package can be insta
 environment and most common nlp tasks can be carried out without having to install extra packages. 
 
 # INSTALLATION
+Install with pip:
+
+    $ pip install enlp
+    
 To install the package directly from github: 
 
     $ pip install git+https://github.com/equinor/eNLP.git
