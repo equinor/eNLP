@@ -1,7 +1,6 @@
 """
 Contains functions for generating & saving custom spacy language models
 """
-import gensim
 import spacy
 
 def add_vectors_to_langmod(wvs, mod_lang):

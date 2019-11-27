@@ -6,8 +6,6 @@ import pytest
 
 from enlp.processing.stdtools import get_stopwords
 
-import spacy
-
 
 def test_get_stopwords_english():
     # arrange - get stopwords outwith function
@@ -17,7 +15,7 @@ def test_get_stopwords_english():
     # act - get functions idea of stopwords
     stopwords_func, stopwords_nb_func, stopwords_en_func = get_stopwords()
     
-    #assert 
+    # assert
     assert stops_en_direct == stopwords_en_func
 
 
@@ -27,7 +25,7 @@ def test_get_stopwords_norwegian():
     stops_nb_direct = list(STOP_WORDS)
 
     # act - get functions idea of stopwords
-    stopwords_func, stopwords_nb_func, stopwords_en_func = get_stopwords()
+    stopwords_func, stopwords_nb_func, _ = get_stopwords()
 
     # assert
     assert stops_nb_direct == stopwords_nb_func
@@ -45,7 +43,7 @@ def test_get_stopwords_full():
     stopwords_direct = [str(i) for i in stopwords]
 
     # act - get functions idea of stopwords
-    stopwords_func, stopwords_nb_func, stopwords_en_func = get_stopwords()
+    stopwords_func, stopwords_nb_func, _ = get_stopwords()
 
     # assert
     assert stopwords_direct == stopwords_func

@@ -2,8 +2,6 @@
 Contains functions for linguistic features of natural language understanding
 """
 
-import spacy
-
 
 def pos_tag(model, text):
     """Return parts-of-speech for words in a peice of text.

@@ -2,7 +2,6 @@
 Contains functions for natural language processing
 """
 
-import spacy
 import string
 from nltk.stem.snowball import SnowballStemmer
 
