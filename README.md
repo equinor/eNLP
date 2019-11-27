@@ -80,7 +80,7 @@ To make the documentation,
  
     $ make doc
 
-And then open the documentation and navigate to the example gallery,
+And then open the documentation,
 
     $ cd /docs/build/html
     $ open index.html
