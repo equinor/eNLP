@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/equinor/eNLP.svg?branch=master)](https://travis-ci.org/equinor/eNLP)
 [![Azure Status](https://dev.azure.com/eNLP/eNLP/_apis/build/status/equinor.eNLP?branchName=master)](https://dev.azure.com/eNLP/eNLP/_build/latest?definitionId=1&branchName=master)
 ![OS-support](https://img.shields.io/badge/OS-linux,win,osx-850A8B.svg)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d1adfcf2908348c4ae9f25a5f77374e4)](https://www.codacy.com/manual/cebirnie92/eNLP?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=equinor/eNLP&amp;utm_campaign=Badge_Grade)
 
 # Equinor Shared NLP Package
 This package contains functions often used in NLP ranging from processing to visualisation. The purpose behind the 
