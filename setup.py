@@ -28,7 +28,7 @@ setup(
     ],
     author='Equinor ASA',
     author_email='clbi@equinor.com',
-    install_requires=['numpy', 'matplotlib', 'pandas', 'spacy==2.0.18', 'nltk', 'gensim'],
+    install_requires=['numpy', 'matplotlib', 'pandas', 'spacy==2.0.18', 'nltk', 'gensim', 'scikit-learn', 'rake-nltk', 'wordcloud'],
     packages=find_packages(exclude=['tests']),
     use_scm_version=dict(root = '.',
                          relative_to = __file__,
