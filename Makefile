@@ -39,5 +39,9 @@ doc:
 	cd docs  && rm -rf source/api/generated && rm -rf source/examples &&\
 	rm -rf build && make html && cd ..
 
+doc_ext:
+	cd docs  && rm -rf source/api/generated && rm -rf source/examples &&\
+	rm -rf build && make html && make latexpdf && cd ..
+
 docupdate:
 	cd docs && make html && cd ..
