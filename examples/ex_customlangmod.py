@@ -6,7 +6,6 @@ a custom spacy language model with them.
 
 
 """
-
 import enlp.language_models as lm
 import enlp.understanding.vectors as vts
 import enlp.processing.stdtools as stdt

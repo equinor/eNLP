@@ -12,7 +12,7 @@ descr = """
 
 # Setup
 setup(
-    name='eNLP',
+    name='enlp',
     description=descr,
     long_description=open(src('README.md')).read(),
     long_description_content_type='text/markdown',
@@ -23,12 +23,12 @@ setup(
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)',
         'Natural Language :: English',
-        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Topic :: Scientific/Engineering :: Mathematics'
     ],
     author='Equinor ASA',
     author_email='clbi@equinor.com',
-    install_requires=['numpy', 'matplotlib', 'pandas'],
+    install_requires=['numpy', 'matplotlib', 'pandas', 'spacy==2.0.18', 'nltk', 'gensim', 'scikit-learn', 'rake-nltk', 'wordcloud'],
     packages=find_packages(exclude=['tests']),
     use_scm_version=dict(root = '.',
                          relative_to = __file__,

@@ -27,4 +27,4 @@ Processing Pipeline
 .. autosummary::
    :toctree: generated/
 
-    nlp_pipeline
+    NLPPipeline

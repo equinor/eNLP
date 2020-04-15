@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 plt.close('all') # very important for read the docs to avoid it crashing due to memory
 
 from enlp.processing.stdtools import get_stopwords, tokenise
-from enlp.pipeline import nlp_pipeline
+from enlp.pipeline import NLPPipeline
 from enlp.visualisation.freq_distribution import wordcloud_plot
 
 import spacy
@@ -36,7 +36,7 @@ all_stopwords, stopwords_nb, stopwords_en = get_stopwords()
 # - stem remaining words
 
 # Initialise object
-processed_text = nlp_pipeline(langmodel, text)
+processed_text = NLPPipeline(langmodel, text)
 
 # Run processing as a pipeline
 processed_text.rm_punctuation().rm_stopwords(stopwords=all_stopwords).nltk_stem_no()

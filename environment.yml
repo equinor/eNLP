@@ -2,12 +2,12 @@ name: enlp
 channels:
   - defaults
 dependencies:
-  - python=3.6.4
-  - numpy=1.13.1
-  - matplotlib=2.0.2
-  - pandas=0.21
-  - nltk=3.3.0
-  - spacy=2.0.11
+  - python>=3.7
+  - numpy
+  - matplotlib
+  - pandas
+  - nltk
+  - spacy=2.0.18
   - scikit-learn
   - gensim
   - pip:

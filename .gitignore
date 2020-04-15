@@ -28,6 +28,7 @@ TODO
 docs/build
 docs/source/api/generated
 docs/source/gallery
+docs/source/examples
 
 # Pylint #
 pylint_plot.py
