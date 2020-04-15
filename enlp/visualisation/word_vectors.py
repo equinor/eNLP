@@ -1,6 +1,7 @@
 """
 Contains functions for visualising word vectors
 """
+
 from sklearn.manifold import TSNE
 import pandas as pd
 import matplotlib.pyplot as plt
