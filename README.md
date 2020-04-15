@@ -1,7 +1,7 @@
 # Equinor Shared NLP Package
-This package contains functions often used in NLP ranging from processing to visualisation. The purpose behind the 
-package is to collect in one place common functions where a package can be installed to setup an nlp-focussed
-environment and most common nlp tasks can be carried out without having to install extra packages. 
+This package is aimed at facilitating Natural Language Processing pipelines and includes functionalities often used in  
+NLP ranging from processing to visualisation. By installing `eNLP` you will have access to a nlp-focussed environment  
+that contains some of the most popular NLP libraries and facilitates their combined usage in a unique and easy way.
 
 
 ## SETUP 
