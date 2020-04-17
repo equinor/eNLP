@@ -27,6 +27,7 @@ venv
 env
 *.pyc
 .eggs
+.vscode/*
 
 # Documentation #
 docs/build
