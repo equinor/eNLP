@@ -66,7 +66,7 @@ def compute_tfidf(text_list, doc_ids=None):
     words = vectorizer.get_feature_names()
     doc_dicts = []
 
-    for i, doc_scores in enumerate(X):
+    for _, doc_scores in enumerate(X):
         doc_dict = dict()
         for w_i, w_v in enumerate(doc_scores.toarray()[0]):
             doc_dict.update({words[w_i]: w_v})
