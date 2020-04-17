@@ -23,6 +23,10 @@ enlp/version.py
 # Development #
 notebooks
 TODO
+venv
+env
+*.pyc
+.eggs
 
 # Documentation #
 docs/build

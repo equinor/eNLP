@@ -4,6 +4,8 @@ Contains functions for natural language processing
 
 import string
 from nltk.stem.snowball import SnowballStemmer
+from spacy.lang.en.stop_words import STOP_WORDS as STOP_WORDS_EN
+from spacy.lang.nb.stop_words import STOP_WORDS as STOP_WORDS_NB
 
 
 def get_stopwords():
@@ -32,11 +34,8 @@ def get_stopwords():
 
     """
 
-    from spacy.lang.en.stop_words import STOP_WORDS
-    stops_en = list(STOP_WORDS)
-
-    from spacy.lang.nb.stop_words import STOP_WORDS
-    stops_nb = list(STOP_WORDS)
+    stops_en = list(STOP_WORDS_EN)
+    stops_nb = list(STOP_WORDS_NB)
 
     stopwords = stops_en + stops_nb
     stopwords = [str(i) for i in stopwords]

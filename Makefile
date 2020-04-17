@@ -45,3 +45,6 @@ doc_ext:
 
 docupdate:
 	cd docs && make html && cd ..
+
+clean-pyc:
+	find . -name \*.pyc -delete
