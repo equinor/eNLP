@@ -19,3 +19,4 @@ nbsphinx
 image
 wordcloud
 rake-nltk
+black
